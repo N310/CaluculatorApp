@@ -12,9 +12,11 @@
 		888D2E4620C9456900E32899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888D2E4420C9456900E32899 /* Main.storyboard */; };
 		888D2E4820C9456A00E32899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888D2E4720C9456A00E32899 /* Assets.xcassets */; };
 		888D2E4B20C9456A00E32899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888D2E4920C9456A00E32899 /* LaunchScreen.storyboard */; };
+		E16BA368204151DAFFE22C48 /* Pods_CaluculatorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86671048010288BFAC16B04 /* Pods_CaluculatorApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07F93FC2CD21D7F8639F40EF /* Pods-CaluculatorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaluculatorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaluculatorApp/Pods-CaluculatorApp.debug.xcconfig"; sourceTree = "<group>"; };
 		888D2E3D20C9456900E32899 /* CaluculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaluculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		888D2E4020C9456900E32899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		888D2E4220C9456900E32899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		888D2E4720C9456A00E32899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		888D2E4A20C9456A00E32899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		888D2E4C20C9456A00E32899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C256C7284C03A3DBC025FAC3 /* Pods-CaluculatorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaluculatorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaluculatorApp/Pods-CaluculatorApp.release.xcconfig"; sourceTree = "<group>"; };
+		C86671048010288BFAC16B04 /* Pods_CaluculatorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaluculatorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16BA368204151DAFFE22C48 /* Pods_CaluculatorApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CC9FBEFE35B6B12FD65C44E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07F93FC2CD21D7F8639F40EF /* Pods-CaluculatorApp.debug.xcconfig */,
+				C256C7284C03A3DBC025FAC3 /* Pods-CaluculatorApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		888D2E3420C9456900E32899 = {
 			isa = PBXGroup;
 			children = (
 				888D2E3F20C9456900E32899 /* CaluculatorApp */,
 				888D2E3E20C9456900E32899 /* Products */,
+				4CC9FBEFE35B6B12FD65C44E /* Pods */,
+				DF4722EB99409E566F348FEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = CaluculatorApp;
 			sourceTree = "<group>";
 		};
+		DF4722EB99409E566F348FEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C86671048010288BFAC16B04 /* Pods_CaluculatorApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 888D2E4F20C9456A00E32899 /* Build configuration list for PBXNativeTarget "CaluculatorApp" */;
 			buildPhases = (
+				16740B912D30610D391C6233 /* [CP] Check Pods Manifest.lock */,
 				888D2E3920C9456900E32899 /* Sources */,
 				888D2E3A20C9456900E32899 /* Frameworks */,
 				888D2E3B20C9456900E32899 /* Resources */,
+				8B33222887B13FE2F7FEC9F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16740B912D30610D391C6233 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaluculatorApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B33222887B13FE2F7FEC9F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CaluculatorApp/Pods-CaluculatorApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Expression/Expression.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expression.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaluculatorApp/Pods-CaluculatorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		888D2E3920C9456900E32899 /* Sources */ = {
@@ -278,6 +343,7 @@
 		};
 		888D2E5020C9456A00E32899 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F93FC2CD21D7F8639F40EF /* Pods-CaluculatorApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +361,7 @@
 		};
 		888D2E5120C9456A00E32899 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C256C7284C03A3DBC025FAC3 /* Pods-CaluculatorApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
